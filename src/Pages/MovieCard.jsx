@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 const MovieCard = ({ movie }) => {
     const { moviePoster, movieTitle, genre, duration, releaseYear, rating } = movie
     return (
-        <div>
+        <div className="pb-40">
             <div className="card card-compact bg-base-100 w-96 shadow-xl">
                 <figure>
                     <img

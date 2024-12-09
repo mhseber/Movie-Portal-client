@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import AwardMovie from "./AwardMovie";
 import Card from "./Card";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Hero></Hero>
             <Card></Card>
+            <AwardMovie></AwardMovie>
         </div>
     );
 };
