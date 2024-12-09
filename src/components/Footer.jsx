@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className="w-full md:w-1/3 mb-4">
                             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
                             <ul className="text-sm text-gray-400 space-y-2">
-                                <li>Email: <a href="mailto:info@ameka.com" className="text-blue-400 hover:underline">info@ameka.com</a></li>
+                                <li>Email: <a href="mailto:info@ameka.com" className="text-blue-400 hover:underline">moviesworld@gmail.com</a></li>
                                 <li>Phone: +1 (123) 456-7890</li>
                                 <li>Address: 123 Ameka Lane, Creativity City, World</li>
                             </ul>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
                     <hr className="border-gray-700 my-4" />
                     <div className="text-center text-sm text-gray-500">
-                        &copy; 2024 Ameka Website. All rights reserved.
+                        &copy; 2024 Movies World Website. All rights reserved.
                     </div>
                 </div>
             </footer>

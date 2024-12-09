@@ -9,6 +9,9 @@ import {
 import Home from './Pages/Home.jsx';
 import AllMovies from './Pages/AllMovies.jsx';
 import Community from './Pages/Community.jsx';
+import Login from './Pages/Login.jsx';
+import AuthLayouts from './Layouts/AuthLayouts.jsx';
+import Register from './Pages/Register.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +29,27 @@ const router = createBrowserRouter([
       {
         path: "/community",
         element: <Community></Community>
-      }
+      },
+      {
+        path: "auth",
+        element: <AuthLayouts></AuthLayouts>,
+        children: [
+          {
+            path: "/auth/login",
+            element: <Login></Login>,
+          },
+          {
+            path: "/auth/register",
+            element: <Register></Register>,
+          },
+          {
+            path: "*",
+            element: <h1>Error</h1>
+          },
+
+        ],
+      },
+
     ]
   },
 ]);
