@@ -6,11 +6,28 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home from './Pages/Home.jsx';
+import AllMovies from './Pages/AllMovies.jsx';
+import Community from './Pages/Community.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    children: [
+      {
+        path: "/home",
+        element: <Home></Home>
+      },
+      {
+        path: "/allMovie",
+        element: <AllMovies></AllMovies>
+      },
+      {
+        path: "/community",
+        element: <Community></Community>
+      }
+    ]
   },
 ]);
 

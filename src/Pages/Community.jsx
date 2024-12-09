@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+const Community = () => {
     return (
         <div>
-            footer
+            community
         </div>
     );
 };
 
-export default Footer;
+export default Community;
