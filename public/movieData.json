@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "moviePoster": "https://i0.wp.com/blog.shortfundly.com/wp-content/uploads/2022/08/1234-2.jpg?resize=640%2C678&ssl=1",
+        "movieTitle": "Black Panther",
+        "genre": "Sci-Fi",
+        "duration": "2h 30m",
+        "releaseYear": 2023,
+        "rating": 8.7
+    },
+    {
+        "id": 2,
+        "moviePoster": "https://i.pinimg.com/736x/f9/03/e8/f903e8ff37d79fedc667046fe91e8232.jpg",
+        "movieTitle": "Ghostbusters",
+        "genre": "Thriller",
+        "duration": "1h 50m",
+        "releaseYear": 2022,
+        "rating": 7.9
+    },
+    {
+        "id": 3,
+        "moviePoster": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00396541-pkqlpnuavm-portrait.jpg",
+        "movieTitle": "Mufasa",
+        "genre": "Drama",
+        "duration": "2h 15m",
+        "releaseYear": 2021,
+        "rating": 8.3
+    },
+    {
+        "id": 4,
+        "moviePoster": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00413291-uchgdzsxlu-portrait.jpg",
+        "movieTitle": "GladiaTor",
+        "genre": "Romance",
+        "duration": "1h 40m",
+        "releaseYear": 2020,
+        "rating": 6.8
+    },
+    {
+        "id": 5,
+        "moviePoster": "https://img.mensxp.com/media/content/2017/Sep/upcoming-hollywood-movies-you-shouldnt-miss-1400x653-1505901970.jpg",
+        "movieTitle": "SuperMan",
+        "genre": "Action",
+        "duration": "2h 10m",
+        "releaseYear": 2019,
+        "rating": 7.5
+    },
+    {
+        "id": 6,
+        "moviePoster": "https://i.ytimg.com/vi/h2cA7u2qXgs/maxresdefault.jpg",
+        "movieTitle": "Venom 2",
+        "genre": "Mystery",
+        "duration": "2h 5m",
+        "releaseYear": 2018,
+        "rating": 8.1
+    }
+]

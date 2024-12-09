@@ -34,7 +34,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         {/* Logo */}
-                        <div className="text-3xl font-extrabold text-red-800 flex items-center">
+                        <div className="text-3xl font-extrabold text-black flex items-center">
 
                             <NavLink to="/"><i>Movies World</i></NavLink>
                         </div>
