@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Community = () => {
     return (
@@ -9,7 +10,7 @@ const Community = () => {
                     <p className="text-sm text-gray-400 pt-10 pb-6">
                         Join our vibrant community of movie enthusiasts! From classics to the latest blockbusters, connect, share reviews, discuss theories, and celebrate the magic of cinema together.
                     </p>
-                    <button className="btn bg-black text-white">Join Now</button>
+                    <Link to="/auth/login" className="btn bg-black text-white">Join Now</Link>
                 </div>
             </div>
         </div>
