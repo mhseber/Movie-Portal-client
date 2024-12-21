@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import lottieRegister from "../../src/assets/lottie/Register.json"
+import Lottie from 'lottie-react';
 
 const Register = () => {
     return (
@@ -87,6 +89,9 @@ const Register = () => {
                     All ready Have An Account ?
                     <Link to="/auth/login"><span className="text-black pl-5">Login</span></Link>
                 </p>
+            </div>
+            <div className="text-center lg:text-left w-96">
+                <Lottie animationData={lottieRegister}></Lottie>
             </div>
         </div>
     );

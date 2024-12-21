@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import loginLottie from "../../src/assets/lottie/login.json"
+import Lottie from "lottie-react";
 
 const Login = () => {
     return (
@@ -58,6 +60,9 @@ const Login = () => {
                     Dont't Have An Account ?
                     <Link to="/auth/register"><span className="text-black pl-5">Register</span></Link>
                 </p>
+            </div>
+            <div className="text-center lg:text-left w-96 pl-4">
+                <Lottie animationData={loginLottie}></Lottie>
             </div>
         </div>
     );
