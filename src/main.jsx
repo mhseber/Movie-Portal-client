@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,23 +11,34 @@ import Community from './Pages/Community.jsx';
 import Login from './Pages/Login.jsx';
 import AuthLayouts from './Layouts/AuthLayouts.jsx';
 import Register from './Pages/Register.jsx';
+import MainRouter from './Router/MainRouter.jsx';
+import SeeDetails from './Pages/SeeDetails.jsx';
+import LearnMore from './Pages/LearnMore.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
+    element: <MainRouter></MainRouter>,
     children: [
       {
-        path: "/home",
+        path: "home",
         element: <Home></Home>
       },
       {
-        path: "/allMovie",
+        path: "allMovie",
         element: <AllMovies></AllMovies>
       },
       {
-        path: "/community",
+        path: "community",
         element: <Community></Community>
+      },
+      {
+        path: "/home/seeDetails",
+        element: <SeeDetails></SeeDetails>
+      },
+      {
+        path: "/home/learnMore",
+        element: <LearnMore></LearnMore>
       },
       {
         path: "auth",
@@ -46,6 +56,7 @@ const router = createBrowserRouter([
             path: "*",
             element: <h1>Error</h1>
           },
+
 
         ],
       },
