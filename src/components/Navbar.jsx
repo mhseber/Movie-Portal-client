@@ -1,10 +1,28 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import AuthContext from "../context/AuthContext";
+import { LuLogIn } from "react-icons/lu";
+import { HiOutlineLogin } from "react-icons/hi";
+import { FaCashRegister } from "react-icons/fa6";
+import { FaHome } from "react-icons/fa";
+import { BiSolidCameraMovie } from "react-icons/bi";
+import { FaCreativeCommonsBy } from "react-icons/fa";
 
 const Navbar = () => {
+    const { user, signOutUser } = useContext(AuthContext);
+    const handleSignOut = () => {
+        signOutUser()
+            .then(() => {
+                console.log('Successful Log Out')
+            })
+            .catch(error => {
+                console.log('failed to sign out . Try Again')
+            })
+    }
     const links = <>
-        <li><NavLink to="/home">Home</NavLink></li>
-        <li><NavLink to="allMovie">All Movies</NavLink></li>
-        <li><NavLink to="community">Community</NavLink></li>
+        <li><NavLink to="/home"><FaHome />Home</NavLink></li>
+        <li><NavLink to="allMovie"><BiSolidCameraMovie />All Movies</NavLink></li>
+        <li><NavLink to="community"><FaCreativeCommonsBy />Community</NavLink></li>
 
     </>
     return (
@@ -45,9 +63,17 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end gap-2 text-red-800">
-                        <Link to="/auth/login" className="btn bg-black text-white">Login</Link>
+                        {
+                            user ? <>
+                                <button
+                                    onClick={handleSignOut}
+                                    className="btn bg-black text-white"> <HiOutlineLogin />Log Out</button>
+                            </> : <>
+                                <Link to="/auth/login" className="btn bg-black text-white"><LuLogIn />Login</Link>
+                                <Link to="/auth/register" className="btn bg-black text-white"><FaCashRegister />Register</Link >
+                            </>
+                        }
 
-                        <Link to="/auth/register" className="btn bg-black text-white">Register</Link >
                     </div>
                 </div>
 

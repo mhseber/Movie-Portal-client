@@ -1,14 +1,45 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import lottieRegister from "../../src/assets/lottie/Register.json"
 import Lottie from 'lottie-react';
+import AuthContext from '../context/AuthContext';
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
+    const { createUser, signInWithGoogle } = useContext(AuthContext);
+
+    const handleRegister = e => {
+        e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+
+        //password validation;
+        // show password validation error
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.log(error.massage)
+            })
+    };
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then((result) => {
+                console.log("Google sign-in success:", result.user);
+            })
+            .catch((error) => {
+                console.error("Google sign-in error:", error);
+            });
+    };
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
             <div className="bg-white shadow-xl shadow-black rounded-lg p-6 w-full max-w-md">
                 <h1 className="text-2xl font-bold text-center mb-6 text-black">User Register</h1>
-                <form>
+                <form onSubmit={handleRegister}>
                     {/* name */}
                     <div className="mb-4">
                         <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
@@ -84,6 +115,11 @@ const Register = () => {
                     >
                         Register
                     </button>
+                    <button
+                        onClick={handleGoogleSignIn}
+                        className="w-full mt-4 btn   text-black font-bold text-xl ">
+                        <FcGoogle />
+                        Log In With Google</button>
                 </form>
                 <p className="text-center font-bold pt-5 ">
                     All ready Have An Account ?
