@@ -3,10 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 import { LuLogIn } from "react-icons/lu";
 import { HiOutlineLogin } from "react-icons/hi";
-import { FaCashRegister } from "react-icons/fa6";
+import { FaCashRegister, FaRegAddressBook } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
-import { BiSolidCameraMovie } from "react-icons/bi";
+import { BiCameraMovie, BiSolidCameraMovie } from "react-icons/bi";
 import { FaCreativeCommonsBy } from "react-icons/fa";
+import { MdFavoriteBorder } from "react-icons/md";
 
 const Navbar = () => {
     const { user, signOutUser } = useContext(AuthContext);
@@ -21,8 +22,10 @@ const Navbar = () => {
     }
     const links = <>
         <li><NavLink to="/home"><FaHome />Home</NavLink></li>
-        <li><NavLink to="allMovie"><BiSolidCameraMovie />All Movies</NavLink></li>
+        <li><NavLink to="allMovie"><BiCameraMovie />All Movies</NavLink></li>
         <li><NavLink to="community"><FaCreativeCommonsBy />Community</NavLink></li>
+        <li><NavLink to="myFavorites"><MdFavoriteBorder />My Favorites</NavLink></li>
+        <li><NavLink to="addMovies"><FaRegAddressBook />Add Movies</NavLink></li>
 
     </>
     return (
@@ -52,9 +55,9 @@ const Navbar = () => {
                             </ul>
                         </div>
                         {/* Logo */}
-                        <div className="text-3xl font-extrabold text-black flex items-center">
+                        <div className="lg:text-3xl  font-extrabold text-black  items-center">
 
-                            <NavLink to="/"><i>Movies World</i></NavLink>
+                            <NavLink to="/"><i className="flex gap-2"><BiSolidCameraMovie />Movies World</i></NavLink>
                         </div>
                     </div>
                     <div className="navbar-center hidden lg:flex">
