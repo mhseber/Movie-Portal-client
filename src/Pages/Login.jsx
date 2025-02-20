@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import loginLottie from "../../src/assets/lottie/login.json"
 import Lottie from "lottie-react";
 import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 import { FcGoogle } from "react-icons/fc";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
     const { singInUser, signInWithGoogle } = useContext(AuthContext);
-
+    const navigate = useNavigate();
 
     const handleSignIn = e => {
         e.preventDefault();
@@ -19,7 +20,17 @@ const Login = () => {
 
         singInUser(email, password)
             .then(result => {
-                console.log('sign in ', result.user)
+                console.log('sign in ', result.user);
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Login Successfull",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+                setTimeout(() => {
+                    navigate("/home");
+                }, 1500);
             })
             .catch(error => {
                 console.log(error)
@@ -30,6 +41,16 @@ const Login = () => {
         signInWithGoogle()
             .then((result) => {
                 console.log("Google sign-in success:", result.user);
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Logged in with Google successfully",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+                setTimeout(() => {
+                    navigate("/home");
+                }, 1500);
             })
             .catch((error) => {
                 console.error("Google sign-in error:", error);

@@ -24,8 +24,10 @@ const Navbar = () => {
         <li><NavLink to="/home"><FaHome />Home</NavLink></li>
         <li><NavLink to="allMovie"><BiCameraMovie />All Movies</NavLink></li>
         <li><NavLink to="community"><FaCreativeCommonsBy />Community</NavLink></li>
-        <li><NavLink to="myFavorites"><MdFavoriteBorder />My Favorites</NavLink></li>
-        <li><NavLink to="addMovies"><FaRegAddressBook />Add Movies</NavLink></li>
+        {user && <>
+            <li><NavLink to="myFavorites"><MdFavoriteBorder />My Favorites</NavLink></li>
+            <li><NavLink to="addMovies"><FaRegAddressBook />Add Movies</NavLink></li>
+        </>}
 
     </>
     return (
