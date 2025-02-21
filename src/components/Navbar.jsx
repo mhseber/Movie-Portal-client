@@ -68,7 +68,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* theme */}
-                    <div className="pl-8">
+                    <div className="lg:pl-8">
                         <label className="swap swap-rotate">
                             {/* this hidden checkbox controls the state */}
                             <input type="checkbox" className="theme-controller" value="synthwave" />

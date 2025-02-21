@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Fantasy",
+        "img": "https://cdn.pixabay.com/photo/2024/05/18/07/31/fantasy-8769764_640.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Thriller",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf9pXBu7ncZYkj021XiCMu_8A1OCEzlxD9sw&s"
+    },
+    {
+        "id": 3,
+        "name": "Romance",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4KX-cEFidv0FDyjnlK5GQaD5FdN2FrNJBA&s"
+    },
+    {
+        "id": 4,
+        "name": "Drama",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUlnx6vOPxtHY6Iv-_X6P1KqReBV39IoeTcw&s"
+    },
+    {
+        "id": 5,
+        "name": "Sci-Fi",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zOqHLdwHsavlqB16tzDS6A6vdbxtFhXjUw&s"
+    },
+    {
+        "id": 6,
+        "name": "Horror",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGBrGQHGvynB47BDbdubq-G6eQ1erVZOIN8w&s"
+    },
+    {
+        "id": 7,
+        "name": "Animated",
+        "img": "https://www.shutterstock.com/image-photo/make-me-cartoon-animated-picture-600nw-2484219811.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Documentary",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtPxHwCha7u6JmzNIRtQ05dU2eewTgmaHfzA&s"
+    }
+]
