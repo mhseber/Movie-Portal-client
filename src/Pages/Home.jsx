@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import AwardMovie from "./AwardMovie";
 import Card from "./Card";
 import Categories from "./Categories";
+import Upcoming from "./Upcoming";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Card></Card>
             <AwardMovie></AwardMovie>
             <Categories></Categories>
+            <Upcoming></Upcoming>
         </div>
     );
 };

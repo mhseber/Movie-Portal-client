@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "War 2",
+        "img": "https://i.ytimg.com/vi/1yf_d93ghzk/maxresdefault.jpg",
+        "ReleaseDate": "20/04/2025",
+        "Description": "War 2 is one of the highly anticipated films of 2025"
+    },
+    {
+        "id": 2,
+        "name": "Jolly LLB 3",
+        "img": "https://i.ytimg.com/vi/bYSaFrpuUNE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB_4DQEL1QsJLkRh_f2iZjTAUmnCA",
+        "ReleaseDate": "12/05/2025",
+        "Description": "Jolly LLB 3 is an upcoming Indian Hindi-language black comedy legal drama film"
+    },
+    {
+        "id": 3,
+        "name": "Housefull 5",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTviYyLWgXs9UrjTm5l2zLxWKRw0-NSuld1Jz_NlvhMkB18-BEmYcaLrrQZ5opxqktVl5Y&usqp=CAU",
+        "ReleaseDate": "22/10/2025",
+        "Description": "Housefull 5 is an upcoming Indian comedy-drama film "
+    },
+    {
+        "id": 4,
+        "name": "Sikandar ",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjzfuJhjVk2jFBFhcXfzgJ_ZSqvAq_zFWeN1h_3ki8k9pDqEVn2kAVG__YmYgVHgeK5Q&usqp=CAU",
+        "ReleaseDate": "30/05/2025",
+        "Description": "Sikandar is an upcoming Indian Hindi-language action film"
+    }
+]
