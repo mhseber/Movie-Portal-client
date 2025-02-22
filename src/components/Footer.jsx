@@ -1,3 +1,6 @@
+import { AiFillInstagram } from "react-icons/ai";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { SiFacebook } from "react-icons/si";
 
 const Footer = () => {
     return (
@@ -28,10 +31,10 @@ const Footer = () => {
                         <div className="w-full md:w-1/3 mb-4">
                             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
                             <div className="flex space-x-4">
-                                <a href="#" className="text-gray-400 hover:text-blue-400">Facebook</a>
-                                <a href="#" className="text-gray-400 hover:text-blue-400">Twitter</a>
-                                <a href="#" className="text-gray-400 hover:text-blue-400">Instagram</a>
-                                <a href="#" className="text-gray-400 hover:text-blue-400">LinkedIn</a>
+                                <a href="#" className="text-gray-400 hover:text-blue-400"><SiFacebook /></a>
+                                <a href="#" className="text-gray-400 hover:text-blue-400"><FaTwitter /></a>
+                                <a href="#" className="text-gray-400 hover:text-blue-400"><AiFillInstagram /></a>
+                                <a href="#" className="text-gray-400 hover:text-blue-400"><FaLinkedinIn /></a>
                             </div>
                         </div>
 
