@@ -14,7 +14,7 @@ const Hero = () => {
         autoPlay
         infiniteLoop
         showStatus={false}
-        interval={4000}
+        interval={2000}
         showArrows={true}
         className="h-full"
       >
