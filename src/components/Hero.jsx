@@ -1,52 +1,35 @@
-import endgame from "../assets/endgame.jpg"
-import spyder from "../assets/spyderman.jpg"
-import venom from "../assets/venom.jpg"
-import superman from "../assets/superman.jpeg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
+import endgame from "../assets/endgame.jpg";
+import spyder from "../assets/spyderman.jpg";
+import venom from "../assets/venom.jpg";
+import superman from "../assets/superman.jpg";
+
 const Hero = () => {
-    return (
-        <div>
-            <div className="carousel h-[600px]">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img
-                        src={endgame}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img
-                        src={spyder}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img
-                        src={venom}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" className="carousel-item relative w-full">
-                    <img
-                        src={superman}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide3" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    );
+  return (
+    <div className="h-[600px] overflow-hidden">
+      <Carousel
+        showThumbs={false}
+        autoPlay
+        infiniteLoop
+        showStatus={false}
+        interval={4000}
+        showArrows={true}
+        className="h-full"
+      >
+        {[endgame, spyder, venom, superman].map((img, index) => (
+          <div key={index} className="h-[600px]">
+            <img
+              src={img}
+              alt={`Slide ${index + 1}`}
+              className="object-cover object-center w-full h-full"
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  );
 };
 
 export default Hero;
