@@ -133,25 +133,52 @@ const Navbar = () => {
             </label>
           </div>
           {/* login logout */}
-          <div className="gap-2 text-red-800 navbar-end">
+          <div className="flex items-center gap-2 text-sky-900 navbar-end">
             {user ? (
               <>
+                {/* Profile Image with Dropdown Name */}
+                <div className=" dropdown dropdown-end">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="border-2 avatar btn btn-ghost border-sky-800 btn-circle"
+                  >
+                    <div className="w-10 rounded-full">
+                      <img src={user.photoURL} alt="user" />
+                    </div>
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-40 mt-4"
+                  >
+                    <li className="font-bold text-center">
+                      {user.displayName}
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Log Out Button */}
                 <button
                   onClick={handleSignOut}
-                  className="text-white bg-black btn"
+                  className="text-white bg-black hover:bg-gray-800 btn"
                 >
-                  {" "}
                   <HiOutlineLogin />
                   Log Out
                 </button>
               </>
             ) : (
               <>
-                <Link to="/auth/login" className="text-white bg-black btn">
+                <Link
+                  to="/auth/login"
+                  className="text-white bg-black hover:bg-gray-800 btn"
+                >
                   <LuLogIn />
                   Login
                 </Link>
-                <Link to="/auth/register" className="text-white bg-black btn">
+                <Link
+                  to="/auth/register"
+                  className="text-white bg-black hover:bg-gray-800 btn"
+                >
                   <FaCashRegister />
                   Register
                 </Link>

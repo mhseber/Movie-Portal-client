@@ -28,7 +28,7 @@ const Login = () => {
           timer: 1500,
         });
         setTimeout(() => {
-          navigate("/home");
+          navigate("/");
         }, 1500);
       })
       .catch((error) => {
