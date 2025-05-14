@@ -26,5 +26,33 @@
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjzfuJhjVk2jFBFhcXfzgJ_ZSqvAq_zFWeN1h_3ki8k9pDqEVn2kAVG__YmYgVHgeK5Q&usqp=CAU",
         "ReleaseDate": "30/05/2025",
         "Description": "Sikandar is an upcoming Indian Hindi-language action film"
+    },
+    {
+        "id": 5,
+        "name": "Avatar: Fire and Ash",
+        "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3_mK68QAVZFVPVWNtvcd5mqeUa5RdbHXWtPCSOY48jkuZbh8V",
+        "ReleaseDate": "2025",
+        "Description": "The conflict on Pandora escalates as Jake and Neytiri's family encounter a new, aggressive Na'vi tribe."
+    },
+    {
+        "id": 6,
+        "name": "Avengers: Doomsday",
+        "img": "https://m.media-amazon.com/images/M/MV5BMGNiN2RlZTMtMTkyZC00YjkwLTgyY2QtMDg1ZDNhODQwNWM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "ReleaseDate": "2025",
+        "Description": "Avengers: Doomsday is an upcoming American superhero film based on the Marvel Comics superhero team the Avengers."
+    },
+    {
+        "id": 7,
+        "name": "Dog Man",
+        "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQko1dJrN3h7rf_ST774SWMFh5uKxs-vZhJm8SAPH5JIl6JFAzt",
+        "ReleaseDate": "01/01/2026",
+        "Description": "When a police officer and his faithful police dog get injured in the line of duty, "
+    },
+    {
+        "id": 8,
+        "name": "Spider-Man: Brand New Day ",
+        "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNg5dAGOrn9OWDEM5-phJbnaKhio2eUQVbCNDkbhfZxCSrTB8a",
+        "ReleaseDate": "01/01/2026",
+        "Description": "The next installment in the Spider-Man franchise."
     }
 ]
