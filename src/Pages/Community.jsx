@@ -103,7 +103,7 @@ const Community = ({ user }) => {
 
       {loading ? (
         <div className="flex justify-center py-10">
-          <span className="loading loading-bars loading-xl"></span>
+          <span className="text-blue-900 loading loading-bars loading-xl"></span>
         </div>
       ) : (
         <section>
