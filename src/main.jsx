@@ -13,7 +13,7 @@ import SeeDetails from "./Pages/SeeDetails.jsx";
 import LearnMore from "./Pages/LearnMore.jsx";
 import AuthProvider from "./context/AuthProvider.jsx";
 import MyFavorites from "./Pages/MyFavorites.jsx";
-import AddMovies from "./Pages/AddMovies.jsx";
+
 import PrivateRoute from "./Router/PrivateRoute.jsx";
 
 const router = createBrowserRouter([
@@ -41,14 +41,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "addMovies",
-        element: (
-          <PrivateRoute>
-            <AddMovies></AddMovies>
-          </PrivateRoute>
-        ),
-      },
+
       {
         path: "/home/seeDetails",
         element: <SeeDetails></SeeDetails>,
