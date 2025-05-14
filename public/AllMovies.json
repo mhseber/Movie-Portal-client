@@ -106,5 +106,59 @@
         "duration": "2h 40m",
         "releaseYear": 2023,
         "rating": 8.8
+    },
+     {
+        "id": 13,
+        "movieTitle": "Avatar: Fire and Ash",
+        "genre": "Action",
+        "moviePoster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3_mK68QAVZFVPVWNtvcd5mqeUa5RdbHXWtPCSOY48jkuZbh8V",
+        "releaseYear": "2025",
+        "duration": "2h 30m",
+        "rating": 8.9
+    },
+    {
+        "id": 14,
+        "movieTitle": "Avengers: Doomsday",
+        "genre": "Action",
+        "moviePoster": "https://m.media-amazon.com/images/M/MV5BMGNiN2RlZTMtMTkyZC00YjkwLTgyY2QtMDg1ZDNhODQwNWM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "releaseYear": "2025",
+        "duration": "3h 00m",
+        "rating": 10
+    },
+    {
+        "id": 15,
+        "movieTitle": "Dog Man",
+        "genre": "Comedy",
+        "moviePoster": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQko1dJrN3h7rf_ST774SWMFh5uKxs-vZhJm8SAPH5JIl6JFAzt",
+        "releaseYear": "01/01/2026",
+        "duration": "1h 40m",
+       "rating": 5.8
+    },
+    {
+        "id": 16,
+        "movieTitle": "Spider-Man: Brand New Day ",
+        "genre": "Action",
+        "moviePoster": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNg5dAGOrn9OWDEM5-phJbnaKhio2eUQVbCNDkbhfZxCSrTB8a",
+        "releaseYear": "01/01/2026",
+        "duration": "2h 00m",
+        "rating": 7.8
+    },
+    {
+        "id": 17,
+        "movieTitle": "Dragon ",
+        "genre": "Thriller",
+        "moviePoster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThq5T-7dFQPg0IQenyX_giBRVcPDBDX62RnjB3dPLaFP1Njayq",
+        "releaseYear": "21/02/2025",
+        "duration": "2h 35m",
+        "rating": 7.9
+    },
+    {
+        "id": 18,
+        "movieTitle": "Pushpa:The Rule - Part 2  ",
+        "genre": "Action",
+        "moviePoster": "https://i.ytimg.com/vi/J19BpdXXQ3M/maxresdefault.jpg",
+        "releaseYear": "04/10/2024",
+        "duration": "3h 15m",
+        "rating": 6.5
     }
 ]

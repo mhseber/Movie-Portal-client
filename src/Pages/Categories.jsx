@@ -59,7 +59,7 @@ const Categories = () => {
         {categories.map((category) => (
           <div
             key={category.id}
-            className="p-4 transition transform shadow-xl cursor-pointer card bg-sky-500 duration-400 hover:-translate-y-2"
+            className="p-4 transition transform shadow-xl cursor-pointer card bg-sky-200 duration-400 hover:-translate-y-2"
             onClick={() => handleCardClick(category)}
           >
             <figure className="px-5 pt-5">
