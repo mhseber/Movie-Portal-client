@@ -112,19 +112,15 @@ const Navbar = () => {
                   <div
                     tabIndex={0}
                     role="button"
-                    className="border-2 avatar btn btn-ghost btn-circle border-sky-800"
+                    className="font-semibold normal-case btn btn-ghost text-sky-800"
                   >
-                    <div className="w-10 rounded-full">
-                      <img src={user.photoURL} alt="user" />
-                    </div>
+                    {user.displayName || "User"}
                   </div>
                   <ul
                     tabIndex={0}
-                    className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-40 mt-4"
+                    className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-40 mt-2"
                   >
-                    <li className="font-bold text-center">
-                      {user.displayName || "User"}
-                    </li>
+                    <li className="font-medium text-center">{user.email}</li>
                   </ul>
                 </div>
               )}
